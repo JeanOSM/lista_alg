@@ -1,0 +1,125 @@
+from distutils.command.clean import clean
+import os
+import random
+import math
+import os
+from turtle import clear
+opc = 0
+def soma():
+    x=int(input("Primeiro Valor:"))
+    y=int(input("Segundo Valor:"))
+    z=int(input("Terceiro Valor:"))
+    print("A soma dos tres valores é:", x+y+z)
+
+def raiz():
+    x = float(input("O Valor:"))
+   # y = float(input("Segundo Valor:"))
+    print("A raiz quadrada é:",math.sqrt(x ))
+
+def sorteio ():
+    x= random.randint(0,100)
+    print("O numero sorteado é:",x)
+
+def menuOpcoes():
+    print (" -------Menu Opções-------")
+    print("1.Soma")
+    print("2.Raiz quadrada")
+    print("3.Sortear numero")
+    print("4.Sair")
+    
+def limpar():
+    
+    if(os.name=="nt"):
+        os.system('cls')
+    
+ 
+
+
+while (opc!=4):
+
+        menuOpcoes()
+        opc = int(input("Insira a opção:"))
+        
+        if (opc==1 ):
+            soma()
+
+        elif(opc==2):
+            raiz()
+
+        elif(opc == 3):
+            sorteio()
+
+       
+limpar()
+            
+
+# 1- o que é procedimento?
+# É o trecho de codigo ou sub-algoritmo, dado nome, onde não tem valor, para ser reutilizado .
+
+# 2- Qual a sintaxe para realizar o procedimento?
+#Inicia com os import em sequencia o sub_algoritmo e depois o algoritmo principal.
+# def nomeDaFuncao():    
+# if():
+#   nomeDaFuncao()  
+
+# 3- def acao():
+#acao()
+
+# 4- o que são parametros e para que servem?
+# São variaveis dentro dos parenteses, que são necessários para enviar os valores para o sub-algoritmo para que o algoritmo seja executado.
+
+# 5- acao(1,2,3)
+# 6- 
+
+
+# Crie um peocedimento para encontrar o maior de 3 numeros:
+
+def coisa(n1, n2, n3):
+    if(n1 > n2 and n1 > n3):
+        print(n1, "é o maior.")
+    elif (n2 > n3 and n2 > n1):
+        print(n2, "é o maior.")
+    elif (n3 > n2 and n3 > n2):
+        print(n3, "é o maior.")
+
+
+x = int(input("Insira o primeiro valor:"))
+y = int(input("Insira o segundo valor:"))
+z = int(input("Insira o terceiro valor:"))
+
+coisa(x, y, z)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
